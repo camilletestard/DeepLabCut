@@ -90,9 +90,12 @@ for folder in folders:
 
     for index, imagename in enumerate(files):
         
-        print(imagename)
         
-        image = io.imread(imagename)
+        s = folder + '/' + imagename
+        
+        print(s)
+        
+        image = io.imread(s)
         plt.axis('off')
 
         if np.ndim(image)==2:
