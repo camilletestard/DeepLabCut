@@ -9,12 +9,12 @@
 
 ########################################
 # Step 1:
-Task = 'experiment'
+Task = 'infant'
 ########################################
 
 # Filename and path to behavioral video:
 vidpath = '.'
-filename = 'experimentvideo1.avi'
+filename = 'infantvideo1.avi'
 
 cropping = False
 
@@ -36,7 +36,7 @@ portion = 1
 
 bodyparts = ['l_akle', 'l_ear', 'l_elbow', 'l_eye', 'l_hip', 'l_kee', 'l_shoulder', 'l_wrist', 'ose', 'r_akle', 'r_ear', 'r_elbow', 'r_eye', 'r_hip', 'r_kee', 'r_shoulder', 'r_wrist']  # Exact sequence of labels as were put by
 # annotator in *.csv file
-Scorers = ['labeller_1']  # who is labeling?
+Scorers = ['Claire']  # who is labeling?
 
 # Set this true if the data was sequentially labeled and if there is one file per folder (you can set the name of this file below, i.e. multibodypartsfilename)
 # Otherwise there should be individual files per bodypart, i.e. in our demo case hand.csv, Finger1.csv etc.
@@ -56,7 +56,7 @@ invisibleboundary=10 # If labels are closer to origin than this number they are 
 ########################################
 
 date = 'Sep'
-scorer = 'labeller_1'
+scorer = 'Claire'
 
 # Userparameters for training set. Other parameters can be set in pose_cfg.yaml
 Shuffles = [1]  # Ids for shuffles, i.e. range(5) for 5 shuffles
