@@ -84,7 +84,7 @@ for folder in folders:
         if (".jpg" in fn and "_labelled" not in fn)
     ]
     files.sort(key=lambda f: int(''.join(filter(str.isdigit, f))))
-    print(files)
+    #print(files)
 
     comparisonbodyparts = list(set(DataCombined.columns.get_level_values(1)))
 
