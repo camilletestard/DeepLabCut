@@ -61,7 +61,7 @@ folders = [
     filename.split('.')[0] in videodatasets and 'labeled' not in videodatasets
 ]
 
-folders = ['experimentvideos1']
+folders = ['infantvideos1']
 
 print(folders)
 # videos=np.sort([fn for fn in os.listdir(os.curdir) if ("avi" in fn)])
