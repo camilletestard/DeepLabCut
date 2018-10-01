@@ -46,7 +46,8 @@ max_input_size: 1000
 
 # Learning rate schedule for the SGD optimiser. 
 multi_step:
-- [0.005, 10000]
+- [0.005, 5000]
+#- [0.005, 10000]
 #- [0.02, 430000]
 #- [0.002, 730000]
 #- [0.001, 1030000]
