@@ -23,11 +23,12 @@ import auxiliaryfunctions
 
 def SplitTrials(trialindex, trainFraction=0.8):
     ''' Split a trial index into train and test sets'''
-    trainsize = int(len(trialindex)*trainFraction)
-    shuffle=np.random.permutation(trialindex)
-    testIndexes=shuffle[:trainsize]
-    trainIndexes=shuffle[trainsize:]
-    return(trainIndexes, testIndexes)
+    trainsize = int(len(trialindex) * trainFraction)
+    shuffle = np.random.permutation(trialindex)
+    testIndexes = shuffle[trainsize:]
+    trainIndexes = shuffle[:trainsize]
+
+    return (trainIndexes, testIndexes)
 
 
 def boxitintoacell(joints):
