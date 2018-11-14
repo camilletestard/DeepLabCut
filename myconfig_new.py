@@ -9,12 +9,12 @@
 
 ########################################
 # Step 1:
-Task = 'roaming'
+Task = 'heyden'
 ########################################
 
 # Filename and path to behavioral video:
 vidpath = '.'
-filename = 'Sample_video_Hayden_short.mp4'
+filename = 'Sample_video_Hayden.mp4'
 
 cropping = False
 
@@ -34,15 +34,15 @@ portion = 1
 # Step 2:
 ########################################
 
-bodyparts = ['l_hand','r_hand','l_foot', 'r_foot', 'r_ear', 'l_ear']  # Exact sequence of labels as were put by
+bodyparts = ['r_ear', 'l_ear', 'r_hand', 'l_hand', 'r_foot', 'l_foot']  # Exact sequence of labels as were put by
 # annotator in *.csv file
-Scorers = ['Testard']  # who is labeling?
+Scorers = ['Claudia']  # who is labeling?
 
 # Set this true if the data was sequentially labeled and if there is one file per folder (you can set the name of this file below, i.e. multibodypartsfilename)
 # Otherwise there should be individual files per bodypart, i.e. in our demo case hand.csv, Finger1.csv etc.
 
 multibodypartsfile=False
-multibodypartsfilename="results.csv"
+multibodypartsfilename="Hayden_Results.csv"
 
 # When importing the images and the labels in the csv/xls files should be in the same order!
 # During labeling in Fiji one can thus (for occluded body parts) click in the origin of the image
@@ -55,8 +55,8 @@ invisibleboundary=10 # If labels are closer to origin than this number they are 
 # Step 3:
 ########################################
 
-date = 'Oct11'
-scorer = 'Testard'
+date = 'Nov15'
+scorer = 'Claudia'
 
 # Userparameters for training set. Other parameters can be set in pose_cfg.yaml
 Shuffles = [1]  # Ids for shuffles, i.e. range(5) for 5 shuffles
