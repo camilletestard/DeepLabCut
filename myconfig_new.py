@@ -9,7 +9,7 @@
 
 ########################################
 # Step 1:
-Task = 'heyden'
+Task = 'hayden'
 ########################################
 
 # Filename and path to behavioral video:
