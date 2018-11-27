@@ -66,7 +66,7 @@ TrainingFraction = [0.95]  # Fraction of labeled images used for training
 # (these are parameters reflected in the pose_cfg.yaml file)
 resnet = 50
 
-trainingsiterations='100000'
+trainingsiterations='10000'
 
 # For Evaluation/ Analyzing videos
 # To evaluate the last model that was trained most set this to: -1
